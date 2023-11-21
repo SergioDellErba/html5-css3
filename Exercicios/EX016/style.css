@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, #65a99b, #367687);
+    font-family: Arial, sans-serif;
+}
+
+main {
+    background-color: rgb(180, 180, 180);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #183F47; /* Ajustei os valores da sombra */
+    width: 600px;
+    padding: 20px; /* Ajustei o espaçamento interno para 20px */
+    margin: 50px auto; /* Centralizei o elemento com margens superior e inferior de 50px */
+}
+
+h1, h2 {
+    color: #000c13;
+    text-align: center;
+    text-shadow: 2px 2px 3px #ec2727; /* Ajustei os valores da sombra de texto */
+}
+
+.paragraph {
+    text-align: justify;
+    line-height: 1.5; /* Ajustei a altura da linha para melhor legibilidade */
+    color: #010c14; /* Cor dos parágrafos */
+}
+
+/* Exemplo de uso no HTML:
+   <p class="paragraph">Seu texto aqui.</p>
+   <p class="paragraph">Outro texto aqui.</p>
+   ...
+*/
+

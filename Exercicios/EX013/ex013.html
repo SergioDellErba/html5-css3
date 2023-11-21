@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos legais para assistir</title>
+    <style>
+        body {
+            background-color: #981310;
+            font-family: Montserrat, sans-serif;
+            color: white;
+            text-align: center;
+        }
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        iframe {
+            width: 560px;
+            height: 315px;
+        }
+        #xpunto-link {
+            margin-top: 20px;
+        }
+        #back-button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vídeos legais para assistir</h1>
+    <div class="video-container">
+        <div>
+            <iframe src="https://www.youtube.com/embed/UgLkLDlRpdQ?si=TMIYTpSxKqTiDjhv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div>
+            <iframe src="https://www.youtube.com/embed/Vp8H0ppAeFA?si=1hhPxbSIJaM5lR4F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div>
+            <iframe src="https://www.youtube.com/embed/ORZijRxf9EI?si=31KrE6azh5tocUBT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div>
+            <iframe src="https://www.youtube.com/embed/9vsmjU85RNg?si=hLc1L-FE4o6Leyc-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div id="xpunto-link">
+        <a href="https://www.youtube.com/channel/UC3jGWg8nnYPDwDI7PgaGJ-w" target="_blank">Veja a página do XPUNTO</a>
+    </div>
+    <div id="back-button">
+        <button onclick="goBack()">VOLTAR</button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.location.reload();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+class TrocaApp {
+    constructor() {
+      // Estrutura para armazenar os interesses dos usuários
+      this.interesses = {};
+      // Estrutura para armazenar as trocas realizadas
+      this.trocasRealizadas = new Set();
+    }
+  
+    cadastrarUsuario(nome, interesse) {
+      if (!this.interesses[interesse]) {
+        this.interesses[interesse] = [];
+      }
+      this.interesses[interesse].push(nome);
+    }
+  
+    encontrarCorrespondencias(usuario, interesse) {
+      const usuariosCorrespondentes = this.interesses[interesse]
+        .filter(nome => nome !== usuario && !this.trocasRealizadas.has(nome));
+      
+      return usuariosCorrespondentes;
+    }
+  
+    realizarTroca(usuario1, usuario2) {
+      // Simula a realização de uma troca
+      console.log(`${usuario1} troca com ${usuario2}`);
+      // Registra a troca para evitar notificações repetidas
+      this.trocasRealizadas.add(usuario1);
+      this.trocasRealizadas.add(usuario2);
+    }
+  
+    notificarCorrespondencias() {
+      for (const interesse in this.interesses) {
+        this.interesses[interesse].forEach(usuario => {
+          const correspondencias = this.encontrarCorrespondencias(usuario, interesse);
+          correspondencias.forEach(correspondente => {
+            this.realizarTroca(usuario, correspondente);
+          });
+        });
+      }
+    }
+  }
+  
+  // Exemplo de Uso
+  const trocaApp = new TrocaApp();
+  
+  trocaApp.cadastrarUsuario("Sérgio", "banana");
+  trocaApp.cadastrarUsuario("Carlos", "banana");
+  trocaApp.cadastrarUsuario("José", "abacaxi");
+  trocaApp.cadastrarUsuario("Pedro", "abacaxi");
+  
+  trocaApp.notificarCorrespondencias();
+  
