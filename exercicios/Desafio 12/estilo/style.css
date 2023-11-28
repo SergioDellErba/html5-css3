@@ -52,11 +52,12 @@ section {
     font-size: 3.5vw;
 }
 section > p {
-    padding-bottom: 20em;
+    padding:  1em;
 }
 section.normal {
     background-color: white;
     color: black;
+    
 }
 section.imagem {
     background-color: rgb(24, 1, 1);
