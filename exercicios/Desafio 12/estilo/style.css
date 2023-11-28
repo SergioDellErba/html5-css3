@@ -40,13 +40,13 @@ section.normal {
     color: black;
 }
 section.imagem {
-    background-color: rgb(138, 13, 13);
+    background-color: rgb(24, 1, 1);
     color: white;
 }
 
 section.imagem > p {
     width: 400px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.195);
 
 }
 footer {
